@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvaSolUnidad2", "EvaSolUnidad2\EvaSolUnidad2.csproj", "{9ABFA748-459A-4A88-9792-E30E0039E6B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentationLayer", "EvaSolUnidad2\PresentationLayer.csproj", "{9ABFA748-459A-4A88-9792-E30E0039E6B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{CE9A940D-6F54-4D34-BF5C-1EE400B1FCC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModeloNegocio", "ModeloNegocio\ModeloNegocio.csproj", "{28FF8086-F76D-4E2B-9FA4-573B72521DFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{9ABFA748-459A-4A88-9792-E30E0039E6B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ABFA748-459A-4A88-9792-E30E0039E6B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ABFA748-459A-4A88-9792-E30E0039E6B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE9A940D-6F54-4D34-BF5C-1EE400B1FCC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE9A940D-6F54-4D34-BF5C-1EE400B1FCC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE9A940D-6F54-4D34-BF5C-1EE400B1FCC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE9A940D-6F54-4D34-BF5C-1EE400B1FCC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28FF8086-F76D-4E2B-9FA4-573B72521DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28FF8086-F76D-4E2B-9FA4-573B72521DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28FF8086-F76D-4E2B-9FA4-573B72521DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28FF8086-F76D-4E2B-9FA4-573B72521DFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

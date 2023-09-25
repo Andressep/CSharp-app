@@ -85,23 +85,23 @@
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(28, 171);
+            radioButton2.Location = new Point(28, 146);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(91, 19);
             radioButton2.TabIndex = 3;
             radioButton2.TabStop = true;
-            radioButton2.Text = "1000 a 9999";
+            radioButton2.Text = "99 a 999";
             radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton3
             // 
             radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(28, 146);
+            radioButton3.Location = new Point(28, 171);
             radioButton3.Name = "radioButton3";
             radioButton3.Size = new Size(72, 19);
             radioButton3.TabIndex = 4;
             radioButton3.TabStop = true;
-            radioButton3.Text = "99 a 999";
+            radioButton3.Text = "1000 a 9999";
             radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton4

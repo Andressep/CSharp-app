@@ -1,4 +1,7 @@
+using Datos;
+using ModeloNegocio;
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 
 namespace EvaSolUnidad2
 {
@@ -31,73 +34,34 @@ namespace EvaSolUnidad2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            void primeNumbers(int min, int max)
-            {
-                int minPrime;
-                int maxPrime;
-                int counter = 0;
-                List<int> primes = new List<int>();
-                Stopwatch stopwatch = new Stopwatch();
-
-                stopwatch.Start();
-
-                for(int number = min; number <= max; number++)
-                {
-                    bool isPrime = true;
-                    for(int divisor = 2; divisor < number;  divisor++)
-                    {
-                        if(number % divisor == 0)
-                        {
-                            isPrime = false;
-                            break;
-                        }
-                    }
-                    if(isPrime)
-                    {
-                        primes.Add(number);
-                        counter += 1;
-                    }
-                }
-
-                minPrime = primes.Min();
-                maxPrime = primes.Max();
-                stopwatch.Stop();
-                long tiempo = stopwatch.ElapsedMilliseconds;
-
-                dataGridView1.Rows[0].Cells[0].Value = min;
-                dataGridView1.Rows[0].Cells[1].Value = max;
-                dataGridView1.Rows[0].Cells[2].Value = minPrime;
-                dataGridView1.Rows[0].Cells[3].Value = maxPrime;
-                dataGridView1.Rows[0].Cells[4].Value = counter;
-                dataGridView1.Rows[0].Cells[5].Value = tiempo + " Milisegundos";
-                dataGridView1.Rows[0].Cells[6].Value = "En proceso";
-            }
+            Operaciones operaciones = new Operaciones();
+            Dato dato = new Dato();
 
             dataGridView1.Rows.Add();
 
-            if(radioButton1.Checked == true)
+            if (radioButton1.Checked == true)
             {
-                primeNumbers(1, 99);
-            }
-            if (radioButton3.Checked == true)
-            {
-                primeNumbers(99, 999);
+                operaciones.primeNumbers(1, 99);
             }
             if (radioButton2.Checked == true)
             {
-                primeNumbers(1000, 9999);
+                operaciones.primeNumbers(99, 999);
+            }
+            if (radioButton3.Checked == true)
+            {
+                operaciones.primeNumbers(1000, 9999);
             }
             if (radioButton4.Checked == true)
             {
-                primeNumbers(10000, 999999);
+                operaciones.primeNumbers(10000, 999999);
             }
             if (radioButton5.Checked == true)
             {
-                primeNumbers(100000, 999999);
+                operaciones.primeNumbers(100000, 999999);
             }
             if (radioButton6.Checked == true)
             {
-                primeNumbers(1000000, 9999999);
+                operaciones.primeNumbers(1000000, 9999999);
             }
         }
     }
